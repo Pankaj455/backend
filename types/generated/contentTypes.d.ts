@@ -374,21 +374,23 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    cover: Attribute.Media;
-    title: Attribute.String;
+    cover: Attribute.Media & Attribute.Required;
+    title: Attribute.String & Attribute.Required;
     rating: Attribute.Decimal;
     enrolled: Attribute.Integer;
     price: Attribute.Integer;
     category: Attribute.Enumeration<
       [
+        'Business',
         'Design',
         'Developments',
-        'Business',
-        'Marketing',
         'Health & Fitness',
+        'IT & Software',
+        'Marketing',
         'Music'
       ]
-    >;
+    > &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
