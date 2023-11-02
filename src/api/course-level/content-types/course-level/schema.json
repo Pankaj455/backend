@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_levels",
+  "info": {
+    "singularName": "course-level",
+    "pluralName": "course-levels",
+    "displayName": "Course Level",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

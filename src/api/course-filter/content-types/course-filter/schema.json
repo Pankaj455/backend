@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "course_filters",
+  "info": {
+    "singularName": "course-filter",
+    "pluralName": "course-filters",
+    "displayName": "Course Filter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "course_levels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-level.course-level"
+    }
+  }
+}
